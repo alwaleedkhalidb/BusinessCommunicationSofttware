@@ -1,9 +1,12 @@
-def send_message(prvmessage):
-    if not prvmessage:
+def send_message(message):
+    if not message:  
         return "Message cannot be empty"
-    if "spam" in prvmessage:
+    if "spam" in message: 
         return "Message might be spam"
-    return "Message sent successfully"
+    return "Message sent successfully" 
+
 print(send_message("Hello!"))        
 print(send_message("This is spam"))  
-print(send_message(""))              
+print(send_message(""))               
+print(send_message("Test message")) 
+print(send_message("Spam content"))  
